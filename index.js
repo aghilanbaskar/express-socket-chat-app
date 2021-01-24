@@ -23,6 +23,6 @@ io.sockets.on('connection', function(socket) {
 
 });
 
-const server = http.listen(5000, function() {
-    console.log('listening on *:5000');
+const server = http.listen(process.env.PORT || 3000, function() {
+    console.log('listening on *:'+process.env.PORT || 3000);
 });
